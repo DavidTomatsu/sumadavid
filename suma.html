@@ -1,0 +1,52 @@
+<html> <!---David Valdes Tomatsu--> 
+<head>
+    <head>
+        <title>Suma De Dos Numeros</title>
+        <style>
+          body {
+            text-align:center;
+          }
+          
+          .results{
+            padding-left: 60%;
+    
+          }
+        </style>
+        </head>
+      <body>
+            <div style ="background:#ff0000;">
+            <font color ="black" size="5px"> 
+                <h2> Suma De Dos Numeros</h2>
+            </font>
+            </div>
+            <div style ="background:#fbff00;">
+            
+
+ <form name="calc"> 
+    <font color ="black" size="5px"> 
+<p>Valor 1: <input type="Text" name="operando1" placeholder="escribe el numero"> 
+<br>
+<p>Valor 2: <input type="Text" name="operando2" placeholder="escribe otro numero">
+<br>
+<p>Resultado: <input type="" name="resultado" placeholder="el resultado es:">  
+</font>
+<br>
+<input type = "button" value="Reset data" onclick="reset()" style="font-size: 15px"/>
+<input type="Button" name="" value=" Suma + " onclick="calcula('+')" style="font-size: 15px" >
+<br>
+</form>
+</body>
+<script>
+  function calcula(operacion){
+    var operando1 = document.calc.operando1.value 
+    var operando2 = document.calc.operando2.value
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+     function fun(){
+        document.getElementById("myForm").reset();
+
+        }    
+}
+</script>
+</body>
+</html>
